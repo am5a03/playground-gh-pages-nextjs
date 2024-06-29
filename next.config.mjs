@@ -1,5 +1,5 @@
-const devNextConfig = {};
-const prodNextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   /**
    * Enable static exports for the App Router.
    *
@@ -24,9 +24,5 @@ const prodNextConfig = {
     unoptimized: true,
   },
 };
-
-/** @type {import('next').NextConfig} */
-const nextConfig =
-  process.env.NODE_ENV === "production" ? prodNextConfig : devNextConfig;
 
 export default nextConfig;
