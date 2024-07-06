@@ -8,6 +8,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const theme = useMemo(
     () =>
       createTheme({
+        spacing: 2,
+        typography: {
+          fontFamily: "Open Sans, Arial",
+        },
         palette: {
           mode: prefersDarkMode ? "dark" : "light",
         },

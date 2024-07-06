@@ -7,7 +7,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <NavigationBar />
-      <Box component="main" sx={{ p: 3 }}>
+      <Box
+        component="main"
+        sx={{ p: 3, marginLeft: "auto", marginRight: "auto" }}
+      >
         {children}
       </Box>
     </Box>
