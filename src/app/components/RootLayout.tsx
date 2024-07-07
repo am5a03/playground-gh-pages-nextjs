@@ -1,18 +1,14 @@
-import { Box, CssBaseline, Stack } from "@mui/material";
+import { Box, CssBaseline, Stack, Toolbar, Typography } from "@mui/material";
 import { ReactNode } from "react";
 import NavigationBar from "./NavigationBar";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box display="flex" flexDirection="column">
       <CssBaseline />
       <NavigationBar />
-      <Box
-        component="main"
-        sx={{ p: 3, marginLeft: "auto", marginRight: "auto" }}
-      >
-        {children}
-      </Box>
+      <Toolbar />
+      {children}
     </Box>
   );
 }
