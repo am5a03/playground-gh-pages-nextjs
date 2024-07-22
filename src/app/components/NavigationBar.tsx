@@ -18,12 +18,12 @@ export default function NavigationBar() {
       url: "/",
     },
     {
-      title: "About",
-      url: "/about",
+      title: "Upcoming Events",
+      url: "#upcoming-events",
     },
     {
       title: "Team",
-      url: "/team",
+      url: "#team",
     },
   ];
 
