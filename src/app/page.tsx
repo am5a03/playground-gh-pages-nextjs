@@ -38,6 +38,7 @@ export default function Home() {
         </Box>
       </Box>
       <Box
+        id="upcoming-events"
         component="section"
         maxWidth="md"
         display="flex"
@@ -63,6 +64,24 @@ export default function Home() {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
+      <Box
+        id="team"
+        component="section"
+        maxWidth="md"
+        display="flex"
+        flexDirection="column"
+        gap={4}
+        alignSelf="center"
+        mx="auto"
+      >
+        <Typography
+          variant="h4"
+          textAlign="center"
+          mb={4}
+          mt={32}
+          fontWeight={700}
+        >
+          Team
         </Typography>
       </Box>
     </>

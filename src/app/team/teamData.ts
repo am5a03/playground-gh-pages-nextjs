@@ -1,4 +1,4 @@
-type TeamMemberProps = {
+export type TeamMemberProps = {
   name: string;
   title: string;
   avatar: string;
