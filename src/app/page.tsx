@@ -1,4 +1,6 @@
 import { Box, Container, Toolbar, Typography } from "@mui/material";
+import TeamMemberList from "./components/team/TeamMemeberList";
+import { teamMembers } from "./team/teamData";
 
 export default function Home() {
   return (
@@ -56,14 +58,16 @@ export default function Home() {
         >
           Upcoming events
         </Typography>
-        <Typography textAlign="center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <iframe
+          src="https://lu.ma/embed/calendar/cal-2mAFsQerJUlecbD/events?"
+          width="640"
+          height="450"
+          style={{ border: 0, background: "transparent" }}
+          allowFullScreen={false}
+          aria-hidden="false"
+          tabIndex={0}
+        ></iframe>
+      </Box>
       <Box
         id="team"
         component="section"
@@ -83,6 +87,7 @@ export default function Home() {
         >
           Team
         </Typography>
+        <TeamMemberList members={teamMembers} />
       </Box>
     </>
   );
