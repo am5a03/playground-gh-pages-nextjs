@@ -30,7 +30,7 @@ export default function Home() {
             <Typography variant="h2" textAlign="center" mb={4} fontWeight={700}>
               GDG Burnaby
             </Typography>
-            <Typography textAlign="center">
+            <Typography textAlign="center" variant="h6">
               We are a volunteer-run, community-driven official chapter of
               Google's worldwide developer network, known as Google Developer
               Groups (GDGs). We are an open, inclusive community of over 100
