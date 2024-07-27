@@ -34,6 +34,7 @@ jobs:
 
       - name: Build with Next.js 🏗️
         run: |
+          yarn
           npx next build
           ls -rtl
           cd ..
