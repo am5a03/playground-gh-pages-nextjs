@@ -14,7 +14,7 @@ export default function Home() {
         display="flex"
         alignItems="center"
         sx={{
-          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header_background.jpg')`,
+          background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header_background.jpg')`,
           backgroundSize: "cover",
         }}
       >
