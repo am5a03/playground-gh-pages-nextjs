@@ -82,7 +82,7 @@ export default function TeamMemberList({ members }: TeamMemberListProps) {
             <Avatar
               alt={modalMember?.name}
               src={modalMember?.avatar}
-              sx={{ width: 256, height: 256 }}
+              sx={{ width: 192, height: 192 }}
             />
             <Typography variant="h6" component="h2">
               {modalMember?.name}
