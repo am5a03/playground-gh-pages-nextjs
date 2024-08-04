@@ -1,6 +1,7 @@
 import { Box, Container, Toolbar, Typography } from "@mui/material";
 import TeamMemberList from "./components/team/TeamMemeberList";
 import { teamMembers } from "./team/teamData";
+import EventCalender from "./components/events/EventsCalendar";
 
 export default function Home() {
   return (
@@ -58,15 +59,7 @@ export default function Home() {
         >
           Upcoming events
         </Typography>
-        <iframe
-          src="https://lu.ma/embed/calendar/cal-2mAFsQerJUlecbD/events?"
-          width="640"
-          height="450"
-          style={{ border: 0, background: "transparent" }}
-          allowFullScreen={false}
-          aria-hidden="false"
-          tabIndex={0}
-        ></iframe>
+        <EventCalender />
       </Box>
       <Box
         id="team"
