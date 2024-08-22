@@ -584,6 +584,11 @@
   dependencies:
     glob "10.3.10"
 
+"@next/font@^14.2.6":
+  version "14.2.6"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-14.2.6.tgz#b52b22cb5c6a862bd63750cb3fe1c40a0368463f"
+  integrity sha512-v0maCHn9a7UiMgzLBGUd/LzhhajEtJva8+Psi48IGrQ8PQfHb9MayO6BxhK/aP3/pE8Kd3JwibA06c0XPoms5A==
+
 "@next/swc-darwin-arm64@14.2.4":
   version "14.2.4"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.2.4.tgz#da9f04c34a3d5f0b8401ed745768420e4a604036"
@@ -1727,6 +1732,13 @@ foreground-child@^3.1.0:
   dependencies:
     cross-spawn "^7.0.0"
     signal-exit "^4.0.1"
+
+framer-motion@^11.3.29:
+  version "11.3.29"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.3.29.tgz#5ec10a350b89789d43ea7d9c6bde45b28470f196"
+  integrity sha512-uyDuUOeOElJEA3kbkbyoTNEf75Jih1EUg0ouLKYMlGDdt/LaJPmO+FyOGAGxM2HwKhHcAoKFNveR5A8peb7yhw==
+  dependencies:
+    tslib "^2.4.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"

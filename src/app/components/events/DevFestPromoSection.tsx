@@ -35,20 +35,20 @@ export default function DevFestPromoSection() {
         flexDirection="column"
         gap={4}
       >
-        <Typography textAlign="justify" lineHeight="1.7" variant="body1">
+        <Typography textAlign="justify" lineHeight="1.7" variant="body1" px={8}>
           Get ready for a tech adventure at DevFest Burnaby, where innovation
           meets fun! 🎉🚀 Join fellow enthusiasts for an unforgettable event
           featuring cutting-edge Google technologies like Firebase, TensorFlow,
           and Responsible AI. 🌐🔬
         </Typography>
-        <Typography textAlign="justify" lineHeight="1.7" variant="body1">
+        <Typography textAlign="justify" lineHeight="1.7" variant="body1" px={8}>
           Meet experts, connect with peers, and dive into the world of GenAI,
           Mobile, Web, Cloud, AR/VR, and IoT. 🌟✨ This isn't just a conference;
           it's a tech carnival at Northeastern University\'s Downtown Vancouver
           campus, designed to inspire, educate, and bring the community
           together. 🎪💼
         </Typography>
-        <Typography textAlign="center" lineHeight="1.7" variant="h4">
+        <Typography textAlign="center" lineHeight="1.7" variant="h4" px={8}>
           Mark your calendar—DevFest is where magic and technology collide! 🎩🔮
         </Typography>
       </Box>
