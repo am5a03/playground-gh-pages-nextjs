@@ -11,6 +11,7 @@ export default function UpcomingEventsSection() {
       flexDirection="column"
       gap={4}
       alignSelf="center"
+      textAlign="center"
       mx="auto"
     >
       <Typography
@@ -20,7 +21,7 @@ export default function UpcomingEventsSection() {
         mt={32}
         fontWeight={700}
       >
-        Upcoming events
+        Upcoming Events
       </Typography>
       <EventCalender />
     </Box>
