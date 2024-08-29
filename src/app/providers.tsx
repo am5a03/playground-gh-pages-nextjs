@@ -42,6 +42,15 @@ export function Providers({ children }: { children: React.ReactNode }) {
         },
         palette: {
           mode: prefersDarkMode ? "dark" : "light",
+          primary: {
+            main: "#ff9800",
+          },
+          secondary: {
+            main: "#0091ea",
+          },
+          background: {
+            default: "#333333",
+          },
         },
       }),
     [prefersDarkMode]
