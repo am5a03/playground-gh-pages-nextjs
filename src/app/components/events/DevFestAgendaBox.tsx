@@ -7,11 +7,13 @@ import {
   SessionizeAPIResponse,
   Speaker,
 } from "@/app/data/types";
+import { Box, Grid, Typography } from "@mui/material";
 import { useRequest } from "ahooks";
+import SessionCard from "../SessionCard";
 
 const SESSIONIZE_API_URL = "https://sessionize.com/api/v2/cy68ckxy/view/All";
 
-const fetchSessions = async () => {
+const fetchSessions = async (): Promise<Session[]> => {
   try {
     const response = await fetch(SESSIONIZE_API_URL);
     if (!response.ok) {
@@ -41,16 +43,57 @@ const fetchSessions = async () => {
     return sessions;
   } catch (e) {
     console.error(e);
-    return "";
+    return [];
   }
 };
 
 export default function DevFestAgendaBox() {
-  const { data, error, loading } = useRequest(fetchSessions, {
+  const { data, error, loading } = useRequest<Session[], any[]>(fetchSessions, {
     cacheKey: "agenda",
     cacheTime: 300000,
     staleTime: 300000,
   });
 
-  return <></>;
+  return loading || error ? (
+    <></>
+  ) : (
+    <Box
+      display="flex"
+      flexDirection="column"
+      width="100%"
+      alignSelf="center"
+      bgcolor="tertiary.main"
+    >
+      <Box
+        my={16}
+        width="70%"
+        flexDirection="column"
+        alignSelf="center"
+        alignItems="center"
+        alignContent="center"
+        justifyContent="center"
+      >
+        <Typography
+          fontWeight={500}
+          variant="h4"
+          alignSelf="center"
+          mb={16}
+          textAlign="center"
+        >
+          Agenda
+        </Typography>
+        <Grid
+          justifyContent="center"
+          container
+          gap={4}
+          spacing={{ xs: 2, md: 3 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}
+        >
+          {data?.map((session) => (
+            <SessionCard key={session.id} session={session} />
+          ))}
+        </Grid>
+      </Box>
+    </Box>
+  );
 }
