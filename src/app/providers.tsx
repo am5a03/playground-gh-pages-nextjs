@@ -51,6 +51,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           background: {
             default: "#333333",
           },
+          // @ts-ignore
           tertiary: {
             main: "#8F00EF",
             light: "#E9DB5D",
