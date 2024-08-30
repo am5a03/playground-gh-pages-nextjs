@@ -5,6 +5,7 @@ import TeamSection from "./components/team/TeamSection";
 import HomeBanner from "./components/HomeBanner";
 import UpcomingEventsSection from "./components/UpcomingEventsSection";
 import DevFestVenueInfoBox from "./components/events/DevFestVenueInfoBox";
+import DevFestAgendaBox from "./components/events/DevFestAgendaBox";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <UpcomingEventsSection />
       <DevFestPromoSection />
       <DevFestVenueInfoBox />
+      <DevFestAgendaBox />
       <TeamSection />
     </>
   );
